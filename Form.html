@@ -16,6 +16,7 @@
                     <label>Name </label>
                 </td>
                 <td>
+                    <!--for compulsory use required (mandatory)-->
                     <input type="text" required ><br>
                 </td>
             </tr>
@@ -24,7 +25,7 @@
                     <label>lastname</label>
                 </td>
                 <td>
-                    <input type="text" required><br>
+                    <input type="text" required name="ln" value=" "><br>
                 </td>
             </tr>
             <tr>
@@ -72,9 +73,10 @@
                     <label>Gender</label>
                 </td>
                 <td>
-                    <input type="radio" id="male">male
-                    <input type="radio">female
-                    <input type="radio">other<br>
+                    <!--for selecting one in radio give the same name as name-->
+                    <input type="radio" id="male" name="Gender">male
+                    <input type="radio" name="Gender">female
+                    <input type="radio" name="Gender">other<br>
                 </td>
                 <tr>
                     <td>
@@ -88,13 +90,31 @@
                     </td>
                 </tr></table>
                 <label for="cource completed"> cource completed</label>
+                <!---checkbox can be more than one and all for only select -->
                 <input type="checkbox"><br><br>
                 <label for="feedback">feedback</label><br><br>
                 <textarea width="500"height="500">comment</textarea><br>
                 <label>upload resume</label>
-                <input type="file"><br><br> 
+                <input type="file"><br><br>
+                <label>description</label><br>
+                <!--give rows and cols size how much you want as a box-->
+                <textarea rows="5"cols="20"></textarea><br>
+                
+                
+            
+        
+            
             <input type="submit"><br><br>
             <input type="reset">
+            
+
+
+            
+        
+        
+                
+                
+    
     </form>
     <h4>Note: fill the form carefully</h4>
     
